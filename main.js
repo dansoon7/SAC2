@@ -5,7 +5,7 @@ template.innerHTML = `
 <style>
 </style>
 <div id="root" style="width: 100%; height: 100%;">
-Hello Custom Widget >>> KHY
+Hello Custom Widget
 </div>
 `
 class Main extends HTMLElement {
@@ -15,8 +15,6 @@ this._shadowRoot = this.attachShadow({ mode: 'open' })
 this._shadowRoot.appendChild(template.content.cloneNode(true))
 this._root = this._shadowRoot.getElementById('root')
 }
-
-
 
 onCustomWidgetResize(width,height)
   {
@@ -30,7 +28,7 @@ onCustomWidgetAfterUpdate(changedProps)
 onCustomWidgetDestory(){
 }
  reder(){
-   this._root.textContent='Hello Custom Widget clientWidth:${this.clientWidth}, clientWidth:${this.clientHeight}'
+   this._root.textContent='Hello Custom Widget clientWidth:${this.clientWidth}, clientHeight:${this.clientHeight}'
  }
   
 }
