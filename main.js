@@ -15,8 +15,8 @@ this._shadowRoot = this.attachShadow({ mode: 'open' })
 this._shadowRoot.appendChild(template.content.cloneNode(true))
 this._root = this._shadowRoot.getElementById('root')
 }
-}
-customElements.define('com-sap-sac-exercise-y001-main', Main)
+
+
 
 onCustomWidgetResize(width,height)
   {
@@ -32,4 +32,7 @@ onCustomWidgetDestory(){
  reder(){
    this._root.textContent='Hello Custom Widget clientWidth:${this.clientWidth}, clientWidth:${this.clientHeight}'
  }
+  
+}
+  customElements.define('com-sap-sac-exercise-y001-main', Main)
 })()
