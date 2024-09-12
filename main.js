@@ -30,6 +30,6 @@ onCustomWidgetAfterUpdate(changedProps)
 onCustomWidgetDestory(){
 }
  reder(){
-   this._root.textContent='Hello Custom Widget clientWith:${this.clentWidth}, cleintHeight:${this.clientHeight}'
+   this._root.textContent='Hello Custom Widget clientWidth:${this.clientWidth}, clientWidth:${this.clientHeight}'
  }
 })()
