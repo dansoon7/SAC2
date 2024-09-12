@@ -28,7 +28,7 @@ onCustomWidgetAfterUpdate(changedProps)
 onCustomWidgetDestory(){
 }
  reder(){
-   this._root.textContent=`Hello Custom Widget clientWidth: ${this.clientWidth}, clientHeight: ${this.clientHeight}`
+  
  }
   
 }
