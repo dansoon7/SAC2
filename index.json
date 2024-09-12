@@ -29,7 +29,7 @@
  },
  "methods":{},
  "events":{},
- "dataBings":{
+ "dataBinding":{
     "feeds": [
        {
            "id": "dimensions",
@@ -41,7 +41,7 @@
            "description": "Measures",
            "type": "mainStructureMember"
 	}
-]
+	]
 }
 }
 
