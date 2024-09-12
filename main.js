@@ -35,5 +35,5 @@ async render()
     this._root.textContent = JSON.stringify(dataBinding)
   }
 }
-  customElements.define('com-sap-sac-exercise-y002-main', Main)
+  customElements.define('com-sap-sac-exercise-y003-main', Main)
 })()
