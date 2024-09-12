@@ -28,7 +28,6 @@ onCustomWidgetAfterUpdate(changedProps)
 onCustomWidgetDestory(){
 }
  reder(){
-  
  }
   
 }
