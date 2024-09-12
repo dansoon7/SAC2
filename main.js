@@ -21,15 +21,19 @@ onCustomWidgetResize(width,height)
      this.render()
   }
 
-onCustomWidgetAfterUpdate(changedProps)
-  {
-    
-  }
+onCustomWidgetAfterUpdate(changedProps){
+}
 onCustomWidgetDestory(){
 }
- reder(){
- }
-  
+
+async render()
+  {
+    const dataBinding = this.dataBinding
+    if(!dataBinding || dataBinding.state !=='success'){
+      return
+    }
+    this._root.textContent = JSON.stringify(dataBinding)
+  }
 }
   customElements.define('com-sap-sac-exercise-y002-main', Main)
 })()
