@@ -28,9 +28,9 @@ onCustomWidgetAfterUpdate(changedProps)
 onCustomWidgetDestory(){
 }
  reder(){
- 
+   this._root.textContent='Hello Custom Widget clientWidth:${this.clientWidth}, clientHeight:${this.clientHeight}'
  }
   
 }
-  customElements.define('com-sap-sac-exercise-y001-main', Main)
+  customElements.define('com-sap-sac-exercise-y002-main', Main)
 })()
